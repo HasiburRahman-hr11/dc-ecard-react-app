@@ -117,7 +117,8 @@
   .work-link img{
     display: none;
   }
-  .work-link p{
+  .work-link p,
+  .work-link h6{
     margin-top: 0;
   }
   .work-details h3{
