@@ -4,7 +4,9 @@ import "./SectionTabs.css";
 const SectionTabs = () => {
   const [active, setActive] = useState("section-1");
   return (
-    <div className="bg-white py-12 section-tabs sticky top-0">
+    <>
+    <div className="empty-py bg-white"></div>
+    <div className="bg-white section-tabs sticky top-0">
       <div className="max-1920">
         <div className="container">
           <ul className="flex align-center justify-center">
@@ -42,6 +44,7 @@ const SectionTabs = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

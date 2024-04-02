@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./HeroSection.css";
 import SocialShare from "./SocialShare";
 
@@ -14,10 +14,27 @@ const skills = [
 
 const HeroSection = () => {
   const [openPopup, setOpenPopup] = useState(false);
+  const [toBottom, setToBottom] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setToBottom(true);
+      } else {
+        setToBottom(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <section className="bg-orange hero-section text-white">
       <div className="section-wrapper py-10">
-        <div className="hero-contact flex align-center">
+        <div className={`hero-contact flex align-center ${toBottom ? 'fixed-bottom' : ''}`}>
           <a href="tel:+917270000000" target="_blank" rel="noreferrer">
             <img src="images/hero-phone-icon.webp" alt="Phone Icon" />
           </a>
