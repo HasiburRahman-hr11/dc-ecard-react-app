@@ -36,7 +36,7 @@ const HeroSection = () => {
                 className="w-full object-cover h-auto"
               />
             </div>
-            <h1 className="uppercase">Vansh Bhutan</h1>
+            <h1 className="uppercase">Vansh Butan</h1>
             <p className="hero-sub w-max mx-auto uppercase relative">
               Founder at Design cell
             </p>
