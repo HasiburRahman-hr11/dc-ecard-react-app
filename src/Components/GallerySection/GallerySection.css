@@ -1,0 +1,65 @@
+.gallery-slider {
+  padding-left: 14.8%;
+  position: relative;
+  margin-top: 8rem;
+}
+.gallery-slider .slick-list {
+  padding: 0 5% 0 0 !important;
+}
+.gallery-slider .slick-track {
+  display: flex !important;
+}
+.gallery-slider .slick-slide,
+.gallery-slider .slick-slide > div {
+  height: inherit;
+}
+.gallery-slider .slick-slide {
+  margin-right: 5rem;
+}
+.gallery-slider .gallery-next {
+  width: 10.4rem;
+  height: 10.4rem;
+  cursor: pointer;
+  padding: 2rem;
+  background-color: #eb532c;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  border-radius: 50%;
+  display: flex;
+}
+.gallery-slider .slick-prev,
+.gallery-slider .slick-arrow::before {
+  display: none !important;
+}
+.gallery-slider .gallery-next:hover {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.gallery-slider .gallery-next img {
+  max-width: 4.2rem;
+}
+.gallery-slider .gallery-next:hover img {
+  filter: invert(1);
+}
+@media screen and (max-width: 1600px) {
+  .gallery-slider {
+    padding-left: 11.5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gallery-slider {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .gallery-slider .slick-slide {
+    margin-right: 3rem;
+  }
+  .gallery-slider .gallery-next {
+    width: 8rem;
+    height: 8rem;
+  }
+}

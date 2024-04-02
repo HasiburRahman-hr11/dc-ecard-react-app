@@ -1,0 +1,123 @@
+.contact-left,
+.contact-right {
+  width: 43%;
+}
+.contact-section .section-description {
+  color: #cbcbcb;
+}
+.contact-list {
+  margin: 5rem 0 7rem 0;
+  padding-right: 3rem;
+}
+.contact-list li {
+  padding: 3rem 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.contact-list li:last-child {
+  border: none;
+}
+.contact-icon {
+  width: 4.7rem;
+  height: 4.7rem;
+  background-color: #eb532c;
+  padding: 1.3rem;
+  margin-top: 1rem;
+}
+.contact-list-text {
+  flex: 1;
+  padding-left: 1.5rem;
+}
+.contact-list span {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #a7a7a7;
+}
+.contact-list p {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.contact-arrow {
+  max-width: 9.5rem;
+}
+.contact-form {
+  padding: 8rem 6rem;
+  border-radius: 2rem;
+}
+.contact-form .flex > div {
+  width: 46.5%;
+}
+.input-box {
+  margin-bottom: 6rem;
+}
+.contact-form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 1.5rem 0;
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  box-shadow: none;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.contact-form textarea {
+  height: 12rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+.submit-form {
+  background-color: #eb532c;
+  border: 1px solid #eb532c;
+  color: #ffffff;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.submit-form:hover {
+  background-color: #fff;
+  color: #eb532c;
+}
+@media screen and (max-width: 930px) {
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  .contact-right {
+    margin-top: 8rem;
+  }
+  .contact-list {
+    padding-right: 0;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 600px){
+  .contact-list p{
+    font-size: 2rem;
+  }
+  .contact-list p br{
+    display: block;
+  }
+  .contact-form .flex > div{
+    width: 100%;
+  }
+  .contact-form {
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+}
+}

@@ -1,0 +1,60 @@
+.social-thumb {
+  width: 41%;
+}
+.social-content-box {
+  width: 50%;
+}
+.social-list li {
+  width: 33.33%;
+  margin-top: 6rem;
+}
+.social-list li a:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.social-list li a {
+  border-left: 1px solid #999999;
+  padding: 2.5rem 3rem;
+  transition: all 0.5s ease;
+  background-color: #fff;
+}
+.social-list li:nth-child(3n) a {
+  border-right: 1px solid #999999;
+}
+.social-list li img {
+  max-height: 4.8rem;
+  max-width: 5.9rem;
+  transition: all 0.5s ease;
+}
+.social-list li:hover img {
+  transform: scale(1.1);
+}
+.social-list li p {
+  color: #656565;
+  margin-top: 1.5rem;
+  transition: all 0.5s ease;
+}
+.social-list li:hover p {
+  color: #eb532c;
+}
+@media screen and (max-width: 930px) {
+  .social-wrapper {
+    text-align: center;
+  }
+  .social-thumb {
+    display: none;
+  }
+  .social-thumb-mobile {
+    display: block;
+    max-width: 400px;
+    margin: 5rem auto;
+  }
+  .social-content-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .social-list li img {
+    max-height: 3.5rem;
+    max-width: 5rem;
+  }
+}

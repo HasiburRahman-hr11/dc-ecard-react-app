@@ -1,0 +1,33 @@
+.footer{
+    padding: 3.5rem 0;
+}
+.footer p{
+    flex: 1;
+
+}
+.footer .save-pdf{
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    font-size: 1.8rem;
+    height: 6rem;
+    padding: 1rem 3rem;
+    min-width: 24rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.footer .save-pdf:hover{
+    background-color: #fff;
+    color: #EB532C;
+}
+@media screen and (max-width: 600px){
+    .footer .flex{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        flex: unset;
+        width: 100%;
+        margin-top: 3rem;
+    }
+}

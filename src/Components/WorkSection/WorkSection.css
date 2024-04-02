@@ -1,0 +1,126 @@
+.work-section {
+  padding-bottom: 5rem;
+}
+.work-section .section-header {
+  max-width: 94rem;
+  margin-bottom: 2rem;
+}
+.work-section .section-description {
+  font-size: 1.8rem;
+}
+.work-item {
+  padding: 12rem 0;
+  border-top: 1px solid #777777;
+}
+.work-item:first-of-type {
+  border: none;
+}
+.work-icon {
+  width: 24%;
+  height: 22rem;
+  padding: 3rem 3rem;
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+}
+.work-icon img {
+  max-height: 13rem;
+}
+.work-details {
+  flex: 1;
+  padding: 2rem 7rem 2rem 5rem;
+}
+.work-sub {
+  font-size: 1.4rem;
+  color: #777777;
+  letter-spacing: 1.5px;
+}
+.work-details h3 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+
+.work-link {
+  width: 24rem;
+  height: 22rem;
+  border: 1px solid #dadada;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+.work-link:hover {
+  background-color: #eb532c;
+}
+
+.work-link img {
+  width: 5.2rem;
+  height: 5.2rem;
+  transition: all 0.5s ease;
+}
+.work-link:hover img {
+  filter: invert(1);
+}
+.work-link p {
+  font-size: 1.4rem;
+  color: #777777;
+  margin-top: 1.5rem;
+  transition: all 0.5s ease;
+}
+.work-link:hover p,
+.work-link:hover h6 {
+  color: #ffffff;
+}
+.work-link h6 {
+  font-size: 2.2rem;
+  color: #eb532c;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 0.8rem;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  .work-item {
+    padding: 6rem 0;
+  }
+  .work-details {
+    padding-left: 2rem;
+  }
+  .work-icon {
+    width: 17%;
+    height: 16rem;
+    padding: 1rem 3rem;
+  }
+  .work-link {
+    width: 100%;
+    padding: 2rem 2rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .work-link a {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 600px){
+  .work-icon{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 2rem 5rem;
+  }
+  .work-details{
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem;
+    flex: none;
+  }
+  .work-link img{
+    display: none;
+  }
+  .work-link p{
+    margin-top: 0;
+  }
+  .work-details h3{
+    font-size: 4rem;
+  }
+}
