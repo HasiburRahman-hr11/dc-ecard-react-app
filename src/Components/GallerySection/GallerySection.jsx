@@ -38,12 +38,7 @@ var settings = {
   pauseOnHover: false,
   pauseOnFocus: false,
   responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
+
     {
       breakpoint: 769,
       settings: {
@@ -51,7 +46,7 @@ var settings = {
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
       },
