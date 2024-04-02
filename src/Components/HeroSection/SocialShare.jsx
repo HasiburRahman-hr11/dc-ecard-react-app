@@ -54,31 +54,31 @@ const SocialShare = () => {
   return (
     <div>
       <div className="social-share-list flex justify-center">
-        <EmailShareButton url="http://localhost:3000/">
+        <EmailShareButton url={currentPageUrl}>
           <EmailIcon size={32} round />
         </EmailShareButton>
-        <FacebookShareButton url="http://localhost:3000/">
+        <FacebookShareButton url={currentPageUrl}>
           <FacebookIcon size={32} round />
         </FacebookShareButton>
-        <FacebookMessengerShareButton url="http://localhost:3000/">
+        <FacebookMessengerShareButton url={currentPageUrl}>
           <FacebookMessengerIcon size={32} round />
         </FacebookMessengerShareButton>
-        <TwitterShareButton url="http://localhost:3000/">
+        <TwitterShareButton url={currentPageUrl}>
           <XIcon size={32} round />
         </TwitterShareButton>
-        <WhatsappShareButton url="http://localhost:3000/">
+        <WhatsappShareButton url={currentPageUrl}>
           <WhatsappIcon size={32} round />
         </WhatsappShareButton>
-        <InstapaperShareButton url="http://localhost:3000/">
+        <InstapaperShareButton url={currentPageUrl}>
           <InstapaperIcon size={32} round />
         </InstapaperShareButton>
-        <LinkedinShareButton url="http://localhost:3000/">
+        <LinkedinShareButton url={currentPageUrl}>
           <LinkedinIcon size={32} round />
         </LinkedinShareButton>
-        <PinterestShareButton url="http://localhost:3000/">
+        <PinterestShareButton url={currentPageUrl}>
           <PinterestIcon size={32} round />
         </PinterestShareButton>
-        <TelegramShareButton url="http://localhost:3000/">
+        <TelegramShareButton url={currentPageUrl}>
           <TelegramIcon size={32} round />
         </TelegramShareButton>
       </div>
