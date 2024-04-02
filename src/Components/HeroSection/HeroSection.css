@@ -76,14 +76,13 @@
   position: absolute;
   top: 5rem;
   right: 9rem;
-  z-index: 20;
+  z-index: 99;
   transition: all 0.6s ease-in-out;
 }
 .hero-contact.fixed-bottom{
   position: fixed;
   bottom: 4rem;
   top: unset;
-  z-index: 99;
   animation: smoothScroll 1.5s forwards;
 }
 @keyframes smoothScroll {
